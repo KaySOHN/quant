@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Quant%20trade&fontSize=90&animation=fadeIn&fontAlignY=38&desc=iscover%20Algorithm%20for%20quant%20trading&descAlignY=51&descAlign=62)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Quant%20Trade&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Discover%20Algorithm%20for%20quant%20trading&descAlignY=51&descAlign=62)
 <p align='center'> Discover Quant and Algorithm with me! </p>
 <p align='center'>
   <a href="https://github.com/kyechan99/capsule-render/labels/Idea">
