@@ -1,13 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Quant%20Trade&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Discover%20Algorithm%20for%20quant%20trading&descAlignY=51&descAlign=62)
-<p align='center'> Discover Quant and Algorithm with me! </p>
-<p align='center'>
-  <a href="https://github.com/kyechan99/capsule-render/labels/Idea">
-    <img src="https://img.shields.io/badge/IDEA%20ISSUE%20-%23F7DF1E.svg?&style=for-the-badge&&logoColor=white"/>
-  </a>
-  <a href="#demo">
-    <img src="https://img.shields.io/badge/DEMO%20-%234FC08D.svg?&style=for-the-badge&&logoColor=white"/>
-  </a>
-</p>
+<p align='center'> Discover Quant Algorithm with Python !!! </p>
 
 ## 1.주의사항
 - V1, V2는 1시간, mini는 하루 간격으로 업데이트됩니다.
