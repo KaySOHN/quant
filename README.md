@@ -67,7 +67,7 @@
 ![image](https://user-images.githubusercontent.com/120305891/209465198-f7a0cf56-0090-48f3-9a21-f9f3aae91bd6.png)
 
 - 생성한 데이터 소스를 확인하고 OK
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/120305891/209465500-7661784c-35dc-426e-af58-b4f60d4f4fff.png)
 
 #### 2.4.3 파워빌더에서 ODBC를 이용해 sQLite3 접속하기 
 - 처음 Application의 Open Event-PowerScript에서 아래와 연결
