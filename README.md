@@ -50,14 +50,14 @@
 - 다음, PowerBuilder 10.5 설치 : Sybase PowerBuilder Enterprise 10.5를 가상 드라이브 마운트 후 설치 
 - 마지막으로 PB105_5034 ~ PB105_7599 까지 순서대로 패치하면 설치 완료
 
-### 2.4 SQLite3 ODBC 설치 및 연동
+### 2.5 SQLite3 ODBC 설치 및 연동
 
-#### 2.4.1 SQLite3 ODBC Driver 설치
+#### 2.5.1 SQLite3 ODBC Driver 설치
 - 아래 링크에서 해당 Driver를 다운로드
 - http://www.ch-werner.de/sqliteodbc/
 - sqliteodbc.exe, sqliteodbc_w64.exe 다운로드 후 설치하면 됨
 
-#### 2.4.2 생성한 DB를 ODBC 드라이버에 연결시키기
+#### 2.5.2 생성한 DB를 ODBC 드라이버에 연결시키기
 - 제어판-관리도구 실행
 - ODBC Data Sources 실행 (64bit 예시)
 
@@ -69,7 +69,7 @@
 - 생성한 데이터 소스를 확인하고 OK
 ![image](https://user-images.githubusercontent.com/120305891/209465500-7661784c-35dc-426e-af58-b4f60d4f4fff.png)
 
-#### 2.4.3 파워빌더에서 ODBC를 이용해 sQLite3 접속하기 
+#### 2.5.3 파워빌더에서 ODBC를 이용해 sQLite3 접속하기 
 - 처음 Application의 Open Event-PowerScript에서 아래와 연결
 ```sh
 String ls_dbSQLite, ls_db
@@ -102,5 +102,21 @@ Disconnect Using ltran_conn ;
  
 - 여기까지 하면 개발환경 준비 끝^^
 
+### 2.6 금융 관련 패키지 설치하기
+-  Python에서 금융/주식 관련 프로그램을 실행하기 위해서는 관련 패키지 설치가 필수적이다.
+-  아래는 관련 패키지를 미리 생성한 quant 가상환경에서 설치하는 과정이다.
+-  Anaconda Prompt (Anacoda3)를 실행 후 아래와 같이 입력한다.
+```sh
+(base) c:\Andaconda3>conda activate quant  #quant라는 이름의 가상환경에 진입
+(quant) c:\Andaconda3>
+
+#Pandas, pyqt5, matplotlib 패키지 설치
+(quant) c:\Andaconda3>pip install pandas pyqt5 matplotlib
+
+#pywin32 모듈 설치 : pip로 설치할 경우 에러가 발생하면 conda로 설치한다.
+(quant) c:\Andaconda3>conda install pywin32
+
+
+```
 
 
