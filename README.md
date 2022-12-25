@@ -35,4 +35,72 @@
 ![image](https://user-images.githubusercontent.com/120305891/209459032-0d06a400-f97c-46b7-acb2-eef949db0304.png)
 
 ### 2.3 Visual Studio Code 에서 Python 설치
-- 확장(단축키 : Ctrl + Shoft + X)을 실행하여 Python을 검
+- 확장(단축키 : Ctrl + Shift + X)을 실행하여 Python을 검색 : Microsfot가 만든 Python을 설치하면 
+- Python extension for Visual Studio Code 설치
+- Python 설치 시 : InteliSense, Liniting, 디버깅, 코드 탐색, Jupyter Notebook 지원 등의 기능 지원 확인
+- Python for VSCode 설치 : 파이썬 언어팩, 구문강조 스니펫 등 기능 지원
+- Python Extension Pack 설치 : 멀트쓰레드 디버깅 지원 IntelliCode 지원 가능
+![image](https://user-images.githubusercontent.com/120305891/209464618-d560eb0e-2a49-489e-bc3b-c194612e3d73.png)
+
+- 터미널 변경하기 : 아나콘다는 명령 프롬프트와 잘 동작하므로 기본 터미널을 통해 명령 프롬프트로 변경 
+ 
+### 2.4 PowerBuilder 10.0, 10.2, 10.5 설치 및 패치
+- 먼저 PowerBuilder 10.0을 Install
+- 다음, PowerBuilder 10.2 패치 : PowerBuilder10_Patch 가 바로 PowerBuilder 10.2 패치임
+- 다음, PowerBuilder 10.5 설치 : Sybase PowerBuilder Enterprise 10.5를 가상 드라이브 마운트 후 설치 
+- 마지막으로 PB105_5034 ~ PB105_7599 까지 순서대로 패치하면 설치 완료
+
+### 2.4 SQLite3 ODBC 설치 및 연동
+
+#### 2.4.1 SQLite3 ODBC Driver 설치
+- 아래 링크에서 해당 Driver를 다운로드
+- http://www.ch-werner.de/sqliteodbc/
+- sqliteodbc.exe, sqliteodbc_w64.exe 다운로드 후 설치하면 됨
+
+#### 2.4.2 생성한 DB를 ODBC 드라이버에 연결시키기
+- 제어판-관리도구 실행
+- ODBC Data Sources 실행 (64bit 예시)
+
+- SQLite3 ODBC Driver 선택
+
+- ODBC 드라이버에 연동 할 Data Source 파일 이름 지정 및 옵션 선택 
+![image](https://user-images.githubusercontent.com/120305891/209465198-f7a0cf56-0090-48f3-9a21-f9f3aae91bd6.png)
+
+- 생성한 데이터 소스를 확인하고 OK
+![Uploading image.png…]()
+
+#### 2.4.3 파워빌더에서 ODBC를 이용해 sQLite3 접속하기 
+- 처음 Application의 Open Event-PowerScript에서 아래와 연결
+```sh
+String ls_dbSQLite, ls_db
+ 
+ls_dbSQLite = "C:\sqlite.db" //sqlite.sqlite
+ls_db = "PBSQLITE"
+ 
+Transaction ltran_conn
+ltran_conn = Create Transaction
+Disconnect Using ltran_conn ;
+ 
+RegistrySet("HKEY_CURRENT_USER\SOFTWARE\ODBC\ODBC.INI\"+ls_db+"","AutoStop",RegString!,"yes")
+RegistrySet("HKEY_CURRENT_USER\SOFTWARE\ODBC\ODBC.INI\"+ls_db+"" ,"Database",RegString!,ls_dbSQLite)
+RegistrySet("HKEY_CURRENT_USER\SOFTWARE\ODBC\ODBC.INI\"+ls_db+"" ,"Driver",RegString!,"sqlite3odbc.dll")
+ 
+// Using ODBC Connect To SQLite 
+ltran_conn.DBMS = "ODBC"
+ltran_conn.AutoCommit = False
+ltran_conn.DBParm =  "ConnectString='DSN=" + ls_db + "'"
+ 
+Connect Using ltran_conn ;
+If ltran_conn.SQLCode = -1 Then
+	MessageBox('Warning','Connect Database Error' + ltran_conn.SQLErrText)
+Else
+	MessageBox('Warning',"Connect Success!")
+End If
+ 
+Disconnect Using ltran_conn ;
+```
+ 
+- 여기까지 하면 개발환경 준비 끝^^
+
+
+
