@@ -27,11 +27,12 @@
 
 ```
 
-### 2.2 Visual Studio Code 설치 및 환경 설
+### 2.2 Visual Studio Code 설치 및 환경 설정
 - VSCode는 마이크로소프트가 개발한 무료 소스 코드 편집기
 - 아래 링크에서 Windows 64비트용을 다운로드 및 설치
 - http://code.visualstudio.com
 - 설치 과정 중 아래 그림에서 모든 항목 선택 후 "다음" 버튼
 ![image](https://user-images.githubusercontent.com/120305891/209459032-0d06a400-f97c-46b7-acb2-eef949db0304.png)
 
--
+### 2.3 Visual Studio Code 에서 Python 설치
+- 확장(단축키 : Ctrl + Shoft + X)을 실행하여 Python을 검
