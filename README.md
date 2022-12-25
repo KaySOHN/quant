@@ -14,12 +14,19 @@
 ![image](https://user-images.githubusercontent.com/120305891/209038337-f96f0f8b-8a52-4498-901a-d81ff98e0957.png)
 - 단, 증권사 API를 사용하기 위해서는 32-Bit를 설치하던가,
   64-Bit 버전을 설치한 후 가상환경 설치 시 32-Bit 버전으로 설치해야 함.
+- 일단 우리는 64비트 아나콘다를 설치한 후 32비트 환경을 추가로 셋팅하지.
 - https://www.anaconda.com/products/individual
+- 아나콘다 64비트 다운로드 후 설치 후 가상환경 생성
+- Anaconda Prompt를 실행하여 다음과 같이 입력한다.
 ```sh
-poetry install             # 의존성 설치
-poetry shell               # 가상환경에 진입
-python manage.py runserver # 서버 실행
+(base) c:\Andaconda3>set CONDA_FORCE_32BIT = 1 # 강제로 32Bit로 셋팅
+(base) c:\Andaconda3>conda create -n quant python=3.8 #quant 라는 이름의 가상환경 생성
+(base) c:\Andaconda3>conda env list  #생성된 가상환경 리스트를 점검
+(base) c:\Andaconda3>conda activate quant  #quant라는 이름의 가상환경에 진입
+(quant) c:\Andaconda3>
+
 ```
+
 
 ### requirements.txt를 이용할 경우
 
