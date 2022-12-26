@@ -116,6 +116,9 @@ Disconnect Using ltran_conn ;
 #pywin32 모듈 설치 : pip로 설치할 경우 에러가 발생하면 conda로 설치한다.
 (quant) c:\Andaconda3>conda install pywin32
 
+#BeautifulSoup 모듈
+(quant) c:\Andaconda3>pip install beautifulsoup4
+
 #pandas DataReader 모듈
 (quant) c:\Andaconda3>pip install pandas_datareader
 
@@ -124,9 +127,8 @@ Disconnect Using ltran_conn ;
 (quant) c:\Andaconda3>pip install trading-calendars
 (quant) c:\Andaconda3>pip install exchange_calendars
 
-
 #IPython 모듈
-(quant) c:\Andaconda3>pip install IPython
+(quant) c:\Andaconda3>pip install ipython
 
 #pykrx 모듈 설치
 (quant) c:\Andaconda3>pip install pykrx
@@ -158,7 +160,14 @@ Disconnect Using ltran_conn ;
 import tensorflow as tf
 tf.__version__
 
+#케라스(Keras) 모듈
+(quant) c:\Andaconda3>pip install keras
 
+#젠심(Gensim) 모듈
+(quant) c:\Andaconda3>pip install gensim
+
+#사이킷런(Scikit-learn) 모듈
+(quant) c:\Andaconda3>pip install scikit-learn
 
 
 ```
