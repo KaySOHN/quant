@@ -106,6 +106,7 @@ Disconnect Using ltran_conn ;
 -  Python에서 금융/주식 관련 프로그램을 실행하기 위해서는 관련 패키지 설치가 필수적이다.
 -  아래는 관련 패키지를 미리 생성한 quant 가상환경에서 설치하는 과정이다.
 -  Anaconda Prompt (Anacoda3)를 실행 후 아래와 같이 입력한다.
+   1> a;lkdsfj
 ```sh
 (base) c:\Andaconda3>conda activate quant  #quant라는 이름의 가상환경에 진입
 (quant) c:\Andaconda3>
