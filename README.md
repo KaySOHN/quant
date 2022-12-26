@@ -106,7 +106,6 @@ Disconnect Using ltran_conn ;
 -  Python에서 금융/주식 관련 프로그램을 실행하기 위해서는 관련 패키지 설치가 필수적이다.
 -  아래는 관련 패키지를 미리 생성한 quant 가상환경에서 설치하는 과정이다.
 -  Anaconda Prompt (Anacoda3)를 실행 후 아래와 같이 입력한다.
-   1> a;lkdsfj
 ```sh
 (base) c:\Andaconda3>conda activate quant  #quant라는 이름의 가상환경에 진입
 (quant) c:\Andaconda3>
@@ -117,7 +116,47 @@ Disconnect Using ltran_conn ;
 #pywin32 모듈 설치 : pip로 설치할 경우 에러가 발생하면 conda로 설치한다.
 (quant) c:\Andaconda3>conda install pywin32
 
+#pandas DataReader 모듈
+(quant) c:\Andaconda3>pip install pandas_datareader
+
+#주식시장 개장일/휴장일 관련 모듈 : pandas-market-calendars, trading-calendars,  exchange_calendars 등
+(quant) c:\Andaconda3>pip install pandas_market_calendars
+(quant) c:\Andaconda3>pip install trading-calendars
+(quant) c:\Andaconda3>pip install exchange_calendars
+
+
+#IPython 모듈
+(quant) c:\Andaconda3>pip install IPython
+
+#pykrx 모듈 설치
+(quant) c:\Andaconda3>pip install pykrx
+
+#pykiwoom 모듈 설치
+(quant) c:\Andaconda3>pip install pykiwoom
+(quant) c:\Andaconda3>pip install -U pykiwoom
+
+#backtesting 모듈 설치
+(quant) c:\Andaconda3>pip install backtesting
+(quant) c:\Andaconda3>pip install backtrader
+
+#증권 데이터 제공 모듈
+(quant) c:\Andaconda3>pip3 install quandl
+
+#yahoo finance 모듈
+(quant) c:\Andaconda3>conda install -c ranaroussi yfinance
+(quant) c:\Andaconda3>pip install yfinance --upgrade --no-cache-dir
+
+#candle chart 그리기 모듈
+(quant) c:\Andaconda3>pip install mplfinance
+(quant) c:\Andaconda3>pip install mpl_finance
+(quant) c:\Andaconda3>pip upgrade mplfinance
+
+
+
 
 ```
 
+### 2.7 키움증권 OpenAPI 설치하기 
+-  OpenAPI 설치 : 키우증원 OpenAPI 모듈을 다운로드하여 C:\OpenAPI 폴더에 복사
+-  KOA Studio 파일을 다운로드 하여 C:\OpenAPI 폴더에 복사하면 됨.
 
