@@ -133,6 +133,11 @@ Disconnect Using ltran_conn ;
 #pykrx 모듈 설치
 (quant) c:\Andaconda3>pip install pykrx
 
+#pystock 모듈 설치
+(quant) c:\Andaconda3>pip install pystock
+(quant) c:\Andaconda3>pip install pystocklib
+(quant) c:\Andaconda3>pip install pysrim
+
 #pykiwoom 모듈 설치
 (quant) c:\Andaconda3>pip install pykiwoom
 (quant) c:\Andaconda3>pip install -U pykiwoom
@@ -140,6 +145,7 @@ Disconnect Using ltran_conn ;
 #backtesting 모듈 설치
 (quant) c:\Andaconda3>pip install backtesting
 (quant) c:\Andaconda3>pip install backtrader
+(quant) c:\Andaconda3>pip install quandl
 
 #증권 데이터 제공 모듈
 (quant) c:\Andaconda3>pip3 install quandl
