@@ -150,6 +150,10 @@ Disconnect Using ltran_conn ;
 #증권 데이터 제공 모듈
 (quant) c:\Andaconda3>pip3 install quandl
 
+#캔들 챠트 라이브러리
+(quant) c:\Andaconda3>pip install mpl_finance
+(quant) c:\Andaconda3>pip install mplfinance
+
 #yahoo finance 모듈
 (quant) c:\Andaconda3>conda install -c ranaroussi yfinance
 (quant) c:\Andaconda3>pip install yfinance --upgrade --no-cache-dir
