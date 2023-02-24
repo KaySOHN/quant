@@ -161,6 +161,7 @@ Disconnect Using ltran_conn ;
 #TA-Lib 모듈
 (quant) c:\Andaconda3>pip install ta
 (quant) c:\Andaconda3>pip install pandas_ta
+(quant) c:\Andaconda3>pip install TA-Lib
 
 #Excel 모듈
 (quant) c:\Andaconda3>pip install openpyxl
