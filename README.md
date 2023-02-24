@@ -158,6 +158,13 @@ Disconnect Using ltran_conn ;
 (quant) c:\Andaconda3>conda install -c ranaroussi yfinance
 (quant) c:\Andaconda3>pip install yfinance --upgrade --no-cache-dir
 
+#TA-Lib 모듈
+(quant) c:\Andaconda3>pip install ta
+(quant) c:\Andaconda3>pip install pandas_ta
+
+#Excel 모듈
+(quant) c:\Andaconda3>pip install openpyxl
+
 #candle chart 그리기 모듈
 (quant) c:\Andaconda3>pip install mplfinance
 (quant) c:\Andaconda3>pip install mpl_finance
