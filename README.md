@@ -166,6 +166,10 @@ Disconnect Using ltran_conn ;
 #Excel 모듈
 (quant) c:\Andaconda3>pip install openpyxl
 
+#Cufflinks 모듈
+(quant) c:\Andaconda3>pip install cufflinks
+(quant) c:\Andaconda3>pip install chart_studio
+
 #candle chart 그리기 모듈
 (quant) c:\Andaconda3>pip install mplfinance
 (quant) c:\Andaconda3>pip install mpl_finance
