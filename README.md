@@ -170,9 +170,6 @@ Disconnect Using ltran_conn ;
 (quant) c:\Andaconda3>pip install cufflinks
 (quant) c:\Andaconda3>pip install chart_studio
 
-#Prophet 모듈
-(quant) c:\Andaconda3>pip install prophet
-
 #candle chart 그리기 모듈
 (quant) c:\Andaconda3>pip install mplfinance
 (quant) c:\Andaconda3>pip install mpl_finance
@@ -194,10 +191,38 @@ tf.__version__
 #사이킷런(Scikit-learn) 모듈
 (quant) c:\Andaconda3>pip install scikit-learn
 
+### 2.7 Facebokk Prophet 관련 키지 설치하기
+#### 2.7.1 Python 버전 확인하기 및 가상환경 활성화
+-  python 가상환경 3.8버전에서 가상환경 활성화 (python 3.8에서만 가능)
+(quant) c:\Andaconda3>python -V
+(quant) c:\Andaconda3>conda activate quant
+
+#### 2.7.2 C++ 컴파일러 설치
+(quant) c:\Andaconda3>conda install libpython m2w64-toolchain -c msys2
+
+#### 2.7.3 Prophet 및 fbprophet에 대한 종속 항목들 설치
+(quant) c:\Andaconda3>conda install numpy cython -c conda-forge
+(quant) c:\Andaconda3>conda install matplotlib scipy pandas -c conda-forge
+(quant) c:\Andaconda3>conda install pystan -c conda-forge
+(quant) c:\Andaconda3>conda install -c anaconda ephem
+
+#### 2.7.4 시계열 예측에 사용될 라이브러리를 설치
+(quant) c:\Andaconda3>pip install scikit-learn
+(quant) c:\Andaconda3>pip install auto-arima (pmdarima)
+(quant) c:\Andaconda3>pip install fbprophet
+(quant) c:\Andaconda3>pip install plotly
+
+#### 2.7.5 Prophet 설치
+(quant) c:\Andaconda3>pip install pystan==2.19.1.1 prophet
+
+또는
+
+(quant) c:\Andaconda3>pip install -c conda-forge prophet
+
 
 ```
 
-### 2.7 키움증권 OpenAPI 설치하기 
+### 2.8 키움증권 OpenAPI 설치하기 
 -  OpenAPI 설치 : 키우증원 OpenAPI 모듈을 다운로드하여 C:\OpenAPI 폴더에 복사
 -  KOA Studio 파일을 다운로드 하여 C:\OpenAPI 폴더에 복사하면 됨.
 
