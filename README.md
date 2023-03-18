@@ -23,7 +23,8 @@
 (base) c:\Andaconda3>conda create -n quant python=3.8 #quant 라는 이름의 가상환경 생성
 (base) c:\Andaconda3>conda env list  #생성된 가상환경 리스트를 점검
 (base) c:\Andaconda3>conda activate quant  #quant라는 이름의 가상환경에 진입
-(quant) c:\Andaconda3>
+- 가상환경의 운영 Bit 및 파이썬 버전 확인
+(quant) c:\Andaconda3>conda info
 
 ```
 
