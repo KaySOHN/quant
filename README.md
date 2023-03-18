@@ -26,6 +26,9 @@
 (base) c:\Andaconda3>conda activate quant  #quant라는 이름의 가상환경에 진입
 - 가상환경의 운영 Bit 및 파이썬 버전 확인
 (quant) c:\Andaconda3>conda info
+- 가상환경의 삭제
+(quant) c:\Andaconda3>conda env remove -n quant
+
 
 ```
 
