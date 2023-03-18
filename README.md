@@ -20,7 +20,8 @@
 - Anaconda Prompt를 실행하여 다음과 같이 입력한다.
 ```sh
 (base) c:\Andaconda3>set CONDA_FORCE_32BIT = 1 # 강제로 32Bit로 셋팅
-(base) c:\Andaconda3>conda create -n quant python=3.8 #quant 라는 이름의 가상환경 생성
+(base) c:\Andaconda3>conda create -n quant python=3.8.5 #quant 라는 이름의 가상환경 생성
+- pykiwoom을 위해서는 python 3.8.5가 필요
 (base) c:\Andaconda3>conda env list  #생성된 가상환경 리스트를 점검
 (base) c:\Andaconda3>conda activate quant  #quant라는 이름의 가상환경에 진입
 - 가상환경의 운영 Bit 및 파이썬 버전 확인
