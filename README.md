@@ -178,12 +178,11 @@ Disconnect Using ltran_conn ;
 #candle chart 그리기 모듈
 (quant) c:\Andaconda3>pip install mplfinance
 (quant) c:\Andaconda3>pip install mpl_finance
-(quant) c:\Andaconda3>pip upgrade mplfinance
 
-#텐서플로우(Tensorflow) 모듈
-(quant) c:\Andaconda3>pip install tensorflow
+#텐서플로우(Tensorflow) 모듈 : 64Bit에서만 설치 가능
+(base) c:\Andaconda3>pip install tensorflow
 #ipython 쉘을 실행하여 텐서플로우가 정상실행되는지 임포트하고 버전을 확인
-(quant) c:\Andaconda3>ipython
+(base) c:\Andaconda3>ipython
 import tensorflow as tf
 tf.__version__
 
