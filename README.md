@@ -179,17 +179,18 @@ Disconnect Using ltran_conn ;
 (quant) c:\Andaconda3>pip install mplfinance
 (quant) c:\Andaconda3>pip install mpl_finance
 
+#사이킷런(Scikit-learn) 모듈
+(quant) c:\Andaconda3>pip install scikit-learn
+
 #케라스(Keras) 모듈
 (quant) c:\Andaconda3>pip install keras
-
-#젠심(Gensim) 모듈
-(quant) c:\Andaconda3>pip install gensim
 
 #XGBoost 모듈
 (quant) c:\Andaconda3>pip install xgboost
 
-#사이킷런(Scikit-learn) 모듈
-(quant) c:\Andaconda3>pip install scikit-learn
+#젠심(Gensim) 모듈
+(quant) c:\Andaconda3>pip install gensim
+
 
 #텐서플로우(Tensorflow) 모듈 : 64Bit에서만 설치 가능
 (base) c:\Andaconda3>pip install tensorflow
