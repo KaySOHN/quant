@@ -179,21 +179,24 @@ Disconnect Using ltran_conn ;
 (quant) c:\Andaconda3>pip install mplfinance
 (quant) c:\Andaconda3>pip install mpl_finance
 
-#텐서플로우(Tensorflow) 모듈 : 64Bit에서만 설치 가능
-(base) c:\Andaconda3>pip install tensorflow
-#ipython 쉘을 실행하여 텐서플로우가 정상실행되는지 임포트하고 버전을 확인
-(base) c:\Andaconda3>ipython
-import tensorflow as tf
-tf.__version__
-
 #케라스(Keras) 모듈
 (quant) c:\Andaconda3>pip install keras
 
 #젠심(Gensim) 모듈
 (quant) c:\Andaconda3>pip install gensim
 
+#XGBoost 모듈
+(quant) c:\Andaconda3>pip install xgboost
+
 #사이킷런(Scikit-learn) 모듈
 (quant) c:\Andaconda3>pip install scikit-learn
+
+#텐서플로우(Tensorflow) 모듈 : 64Bit에서만 설치 가능
+(base) c:\Andaconda3>pip install tensorflow
+#ipython 쉘을 실행하여 텐서플로우가 정상실행되는지 임포트하고 버전을 확인
+(base) c:\Andaconda3>ipython
+import tensorflow as tf
+tf.__version__
 
 ### 2.7 Facebokk Prophet 관련 키지 설치하기
 #### 2.7.1 Python 버전 확인하기 및 가상환경 활성화
